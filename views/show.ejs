@@ -1,0 +1,20 @@
+<% include partials/header%>
+
+<h1><%= campground.name%></h1>
+
+<img src="<%= campground.image%>">
+
+<p><%=campground.description%></p>
+
+<%for (i in campground.comments){ %>
+	<p><%=campground.comments[i].text%> - <strong><%=campground.comments[i].author%></strong></p>
+<%}%>
+
+
+
+
+
+
+
+
+<% include partials/footer%>
